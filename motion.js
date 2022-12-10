@@ -7,20 +7,24 @@ window.onload = function () {
 
         let magnetName = ""
         let magnetNameTd = tdList[0]
-        let aNode = magnetNameTd.getElementsByTagName("a")
-        if (aNode !== null) {
-            magnetName = aNode[0].text
-        }
-        if (magnetName.includes("1080")) {
-            magnetNameTd.setAttribute("style", "background: aquamarine")
+        if (magnetNameTd !== undefined) {
+            let aNode = magnetNameTd.getElementsByTagName("a")
+            if (aNode !== null) {
+                magnetName = aNode[0].text
+            }
+            if (magnetName.includes("1080")) {
+                magnetNameTd.setAttribute("style", "background: aquamarine")
+            }
         }
 
         let magnetSizeTd = tdList[1]
-        let magnetSize = magnetSizeTd.textContent
-        if (magnetSize.includes("GB")) {
-            let size = parseFloat(magnetSize.replaceAll("GB", "").trim())
-            if (size >= 2.5 && size <= 10.0) {
-                magnetSizeTd.setAttribute("style", "background: aquamarine")
+        if (magnetSizeTd !== undefined) {
+            let magnetSize = magnetSizeTd.textContent
+            if (magnetSize.includes("GB")) {
+                let size = parseFloat(magnetSize.replaceAll("GB", "").trim())
+                if (size >= 2.5 && size <= 10.0) {
+                    magnetSizeTd.setAttribute("style", "background: aquamarine")
+                }
             }
         }
     }
