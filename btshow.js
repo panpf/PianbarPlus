@@ -23,7 +23,7 @@ function saveMagnetUrl(buttonNode, magnetUrl) {
             if (magnetUrlArray === undefined) {
                 magnetUrlArray = []
             }
-            magnetUrlArray.push(magnetUrl)
+            magnetUrlArray.push(magnetUrl)  // todo 加入池子时 加入名字和链接 已经网页链接地址，查看的时候用得到
         } else {
             magnetUrlArray.splice(index, 1)
         }

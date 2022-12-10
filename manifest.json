@@ -23,13 +23,26 @@
     },
     {
       "matches": [
-        "http://www.pianbar.net/motion/*",
-        "http://www.pianbar.net/magical/*",
-        "http://www.pianbar.net/criminal/*",
+        "http://www.pianbar.net/anime/*",
+        "http://www.pianbar.net//anime/*",
         "http://www.pianbar.net/drama/*",
-        "http://www.pianbar.net/homemade/*",
+        "http://www.pianbar.net//drama/*",
+        "http://www.pianbar.net/criminal/*",
+        "http://www.pianbar.net//criminal/*",
+        "http://www.pianbar.net/documentary/*",
+        "http://www.pianbar.net//documentary/*",
+        "http://www.pianbar.net/epic/*",
+        "http://www.pianbar.net//epic/*",
         "http://www.pianbar.net/euramerica/*",
-        "http://www.pianbar.net/documentary/*"
+        "http://www.pianbar.net//euramerica/*",
+        "http://www.pianbar.net/funny/*",
+        "http://www.pianbar.net//funny/*",
+        "http://www.pianbar.net/homemade/*",
+        "http://www.pianbar.net//homemade/*",
+        "http://www.pianbar.net/magical/*",
+        "http://www.pianbar.net//magical/*",
+        "http://www.pianbar.net/motion/*",
+        "http://www.pianbar.net//motion/*"
       ],
       "js": [
         "motion.js"
