@@ -44,7 +44,15 @@
         "http://www.pianbar.net/magical/*",
         "http://www.pianbar.net//magical/*",
         "http://www.pianbar.net/motion/*",
-        "http://www.pianbar.net//motion/*"
+        "http://www.pianbar.net//motion/*",
+        "http://www.pianbar.net/otsort/*",
+        "http://www.pianbar.net//otsort/*",
+        "http://www.pianbar.net/panic/*",
+        "http://www.pianbar.net//panic/*",
+        "http://www.pianbar.net/romance/*",
+        "http://www.pianbar.net//romance/*",
+        "http://www.pianbar.net/scifi/*",
+        "http://www.pianbar.net//scifi/*"
       ],
       "js": [
         "motion.js"

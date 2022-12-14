@@ -1,8 +1,9 @@
 document.getElementById("search").addEventListener("click", function () {
     let text = document.getElementById("textarea").value;
     let names = text.split("\n");
-    for (let index in names) {
-        let encodeName = encodeURI(names[index].trim())
+    for (let i = 0; i < names.length; i++) {
+        let name = names[i]
+        let encodeName = encodeURI(name.trim())
         if (encodeName.length > 0) {
             window.open("http://so.pianbar.net/search.aspx?q=" + encodeName, "_blank");
         }
@@ -21,8 +22,8 @@ document.getElementById("copyMagnetUrls").addEventListener("click", function () 
     storage.get(["magnetUrls"], function (cacheResult) {
         let magnetUrls = cacheResult.magnetUrls
         let magnetUrlsString = ''
-        for (let magnetUrlsKey in magnetUrls) {
-            let magnetUrl = magnetUrls[magnetUrlsKey]
+        for (let i = 0; i < magnetUrls.length; i++) {
+            let magnetUrl = magnetUrls[i]
             if (magnetUrlsString.length > 0) {
                 magnetUrlsString += '\n'
                 magnetUrlsString += '\n'
@@ -63,18 +64,6 @@ function setCount() {
         document.getElementById("magnetUrlsCount").innerText = magnetUrlsCount
     })
 }
-
-// chrome.storage.onChanged.addListener(function(changes, namespace) {
-//     for (var key in changes) {
-//         var storageChange = changes[key];
-//         console.log('Storage key "%s" in namespace "%s" changed. ' +
-//             'Old value was "%s", new value is "%s".',
-//             key,
-//             namespace,
-//             storageChange.oldValue,
-//             storageChange.newValue);
-//     }
-// });
 
 /**
  * 复制单行内容到粘贴板
